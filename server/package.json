@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
@@ -14,7 +15,7 @@
     "nodemon": "^1.14.11"
   },
   "scripts": {
-    "dev": "nodemon main.js"
+    "dev": "nodemon src/app.js --watch"
   },
   "keywords": [],
   "author": "",
