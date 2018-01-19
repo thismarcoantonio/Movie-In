@@ -15,7 +15,7 @@ class AuthPage extends React.Component {
     this.setState({ login: !this.state.login })
   }
 
-  handleAuth () {
+  handleAuth (e) {
     
   }
 
@@ -38,13 +38,11 @@ class AuthPage extends React.Component {
             {this.state.login ? 
               (
               <div className="text-light">
-                Don't have an account yet?
-                <span className="underline">Register Now</span>.
+                Don't have an account yet? <span className="underline">Register Now</span>.
               </div>
               ) : (
               <div className="text-light">
-                Already have an account?
-                <span className="underline">Login Now</span>.
+                Already have an account? <span className="underline">Login Now</span>.
               </div>
               )
             }

@@ -23,12 +23,14 @@
     padding: 48px 48px 32px 48px;
   }
   &_button {
+    text-align: center;
     position: relative;
     margin: 20px 0 0;
     font-weight: 700;
     background: #FFFFFF;
     color: $blue;
     width: 85%;
+    text-decoration: none;
     max-width: 300px;
     font-size: 1.2em;
     padding: 13px 30px;

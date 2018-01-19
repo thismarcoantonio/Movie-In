@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
   return (
@@ -7,7 +8,7 @@ const LandingPage = () => {
         <div className="hero_bg" />
         <h1 className="brand_title">Movie<b>In</b></h1>
         <p className="brand_description">Share passion, share emotions</p>
-        <button type="button" className="hero_button">SHARE MOVIES</button>
+        <Link to="/auth" className="hero_button">SHARE MOVIES</Link>
       </header>
 
       <section className="container d-flex p-relative">
