@@ -16,18 +16,18 @@ var todoType = new GraphQLObjectType({
   fields: () => ({
     itemId: {
       type: (GraphQLInt),
-      description: 'The id of the todo.',
+      description: 'The id of the todo.'
     },
     item: {
       type: GraphQLString,
-      description: 'The name of the todo.',
+      description: 'The name of the todo.'
     },
     completed: {
       type: GraphQLBoolean,
       description: 'Completed todo? '
     }
   })
-});
+})
 
 var schema = new GraphQLSchema({
   query: new GraphQLObjectType({
@@ -41,7 +41,7 @@ var schema = new GraphQLSchema({
             type: new GraphQLNonNull(GraphQLInt)
           }
         },
-        resolve: (root, { itemId }, source, fieldASTs) => new Promise((resolve, reject) => todo.find({itemId},(err, todos) => err ? reject(err) : resolve(todos)))
+        resolve: (root, { itemId }, source, fieldASTs) => new Promise((resolve, reject) => todo.find({ itemId }, (err, todos) => err ? reject(err) : resolve(todos)))
       }
     }
   })

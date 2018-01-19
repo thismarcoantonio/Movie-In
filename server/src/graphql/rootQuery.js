@@ -1,7 +1,7 @@
-const { GraphQLObjectType , GraphQLString } = require('graphql')
+const { GraphQLObjectType, GraphQLString } = require('graphql')
 
 module.exports = new GraphQLObjectType({
-  name: 'movies',
+  name: 'Query',
   fields: {
     viewer: { type: GraphQLString, resolve: () => 'hello' }
   }

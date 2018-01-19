@@ -1,0 +1,72 @@
+.bg-light {
+  background-color: $light !important;
+}
+.btn-light {
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: 0;
+  cursor: pointer;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 1.6em;
+}
+.p-relative {
+  position: relative;
+}
+.d-flex {
+  display: flex;
+}
+.text-light {
+  color: $light;
+}
+.text-dark {
+  color: $dark;
+}
+.card {
+  background-color: $light;
+  box-shadow: 0 5px 7px rgba(0,0,0,.05);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: all ease .3s;
+  flex: 1;
+  &_title {
+    font-size: 1.7em;
+    position: relative;
+    &:before {
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 3px;
+      bottom: -5px;
+      left: 1px;
+      background-color: $dark;
+      content: '';
+    }
+  }
+  &_description {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: $dark + 50;
+  }
+}
+.underline {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .card {
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+}

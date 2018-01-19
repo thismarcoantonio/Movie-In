@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700');
+@import './fragments/variables';
+@import './fragments/resets';
+@import './fragments/colors';
+@import './fragments/helpers';
+
+@import './components/Header';
+@import './components/LandingPage';
+@import './components/AuthPage';
+
+body {
+  background: $light;
+  font-family: 'Roboto', Helvetica, Sans-serif;
+  color: $dark;
+  font-size: 80%;
+}
+
+.brand_title {
+  position: relative;
+  font-size: 4.6em;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+  transition: all .3s ease;
+}
+.brand_description {
+  position: relative;
+  text-align: center;
+  font-size: 1.3em;
+  letter-spacing: .7px;
+  transition: all .3s ease;
+}
+
+@media screen and (min-width: 576px) {
+  .brand {
+    &_title {
+      font-size: 6em;
+    }
+    &_description {
+      font-size: 1.7em;
+    }
+  }
+}

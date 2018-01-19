@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  display: flex;
+  background: none;
+  padding: 15px;
+  justify-content: space-between;
+  color: $light;
+  &_logo {
+    font-weight: 300;
+  }
+}
