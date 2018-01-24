@@ -44,8 +44,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
-    port: 3000,
-    host: '192.168.0.25'
+    port: 3000
   },
   plugins: [
     new ExtractTextPlugin('style.css'),

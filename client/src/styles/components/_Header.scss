@@ -1,11 +1,13 @@
-.header {
+.app-header {
   width: 100%;
   display: flex;
   background: none;
   padding: 15px;
   justify-content: space-between;
   color: $light;
-  &_logo {
-    font-weight: 300;
+  @at-root {
+    &_logo {
+      font-weight: 300;
+    }
   }
 }

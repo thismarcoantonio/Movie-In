@@ -5,20 +5,14 @@ import { ApolloProvider } from 'react-apollo'
 import { client } from '../config/apolloConfig'
 import AuthPage from './AuthPage'
 import LandingPage from './LandingPage'
-import Header from './Header'
 
 const AppRouter = () => (
   <ApolloProvider client={client}>
     <BrowserRouter>
-      <div>
-        <Switch>
-          <Header />
-        </Switch>
-        <Switch>
-          <Route path="/" component={LandingPage} exact={true} />
-          <Route path="/auth" component={AuthPage} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/" component={LandingPage} exact={true} />
+        <Route path="/auth" component={AuthPage} />
+      </Switch>
     </BrowserRouter>
   </ApolloProvider>
 )
